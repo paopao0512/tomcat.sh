@@ -190,6 +190,8 @@ function deployDir(){
 }
 
 #监控
+function Monitor() {
+  # 判断网卡存在与否
   if [ ! -d /sys/class/net/$eth ];
       echo -e "You system have network-interface:\n`ls /sys/class/net`"
   while [ "1" ]
